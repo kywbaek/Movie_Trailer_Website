@@ -41,6 +41,6 @@ inception = media.Movie("Inception",
                         "https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg",
                         "https://www.youtube.com/watch?v=YoHD9XEInc0")
 
-movies = [toy_story, avatar, the_rock, dumb_and_dumber, american_history_x, fight_club, titanic, the_patriot, armageddon, inception]
-
+movies = media.Movie.movies
+movies.sort(key=lambda movie: movie.title)
 fresh_tomatoes.open_movies_page(movies)
