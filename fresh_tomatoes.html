@@ -35,7 +35,6 @@
         }
         .movie-tile:hover {
             background-color: #EEE;
-            cursor: pointer;
         }
         .scale-media {
             padding-bottom: 56.25%;
@@ -50,6 +49,20 @@
             top: 0;
             background-color: white;
         }
+        .trailer-link {
+            font-size: large;
+            width: 40%;
+            margin-left: 10%;
+            float: left;
+        }
+        .trailer-link:hover {
+            cursor: pointer;
+        }
+        .wiki-link {
+            font-size: large;
+            width: 40%;
+            margin-right: 10%;
+        }
     </style>
     <script type="text/javascript" charset="utf-8">
         // Pause the video when the modal is closed
@@ -59,7 +72,7 @@
             $("#trailer-video-container").empty();
         });
         // Start playing the video whenever the trailer modal is opened
-        $(document).on('click', '.movie-tile', function (event) {
+        $(document).on('click', '.trailer-link', function (event) {
             var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
             var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
             $("#trailer-video-container").empty().append($("<iframe></iframe>", {
@@ -104,54 +117,74 @@
     </div>
     <div class="container">
       
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="XfQYHqsiN5g" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center">
     <img src="https://upload.wikimedia.org/wikipedia/en/0/0a/American_history_x_poster.jpg" width="220" height="342">
     <h2>American History X</h2>
+    <div class='trailer-link' data-trailer-youtube-id="XfQYHqsiN5g" data-toggle="modal" data-target="#trailer">TRAILER</div>
+    <a href="https://en.wikipedia.org/wiki/American_History_X" class='wiki-link'>WIKIPEDIA</a>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="kg_jH47u480" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center">
     <img src="https://upload.wikimedia.org/wikipedia/en/f/fc/Armageddon-poster06.jpg" width="220" height="342">
     <h2>Armageddon (1998 film)</h2>
+    <div class='trailer-link' data-trailer-youtube-id="kg_jH47u480" data-toggle="modal" data-target="#trailer">TRAILER</div>
+    <a href="https://en.wikipedia.org/wiki/Armageddon_(1998_film)" class='wiki-link'>WIKIPEDIA</a>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="-9ceBgWV8io" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center">
     <img src="http://upload.wikimedia.org/wikipedia/id/b/b0/Avatar-Teaser-Poster.jpg" width="220" height="342">
     <h2>Avatar (2009 film)</h2>
+    <div class='trailer-link' data-trailer-youtube-id="-9ceBgWV8io" data-toggle="modal" data-target="#trailer">TRAILER</div>
+    <a href="https://en.wikipedia.org/wiki/Avatar_(2009_film)" class='wiki-link'>WIKIPEDIA</a>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="l13yPhimE3o" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center">
     <img src="https://upload.wikimedia.org/wikipedia/en/6/64/Dumbanddumber.jpg" width="220" height="342">
     <h2>Dumb and Dumber</h2>
+    <div class='trailer-link' data-trailer-youtube-id="l13yPhimE3o" data-toggle="modal" data-target="#trailer">TRAILER</div>
+    <a href="https://en.wikipedia.org/wiki/Dumb_and_Dumber" class='wiki-link'>WIKIPEDIA</a>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="SUXWAEX2jlg" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center">
     <img src="https://upload.wikimedia.org/wikipedia/en/f/fc/Fight_Club_poster.jpg" width="220" height="342">
     <h2>Fight Club</h2>
+    <div class='trailer-link' data-trailer-youtube-id="SUXWAEX2jlg" data-toggle="modal" data-target="#trailer">TRAILER</div>
+    <a href="https://en.wikipedia.org/wiki/Fight_Club" class='wiki-link'>WIKIPEDIA</a>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="YoHD9XEInc0" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center">
     <img src="https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg" width="220" height="342">
     <h2>Inception</h2>
+    <div class='trailer-link' data-trailer-youtube-id="YoHD9XEInc0" data-toggle="modal" data-target="#trailer">TRAILER</div>
+    <a href="https://en.wikipedia.org/wiki/Inception" class='wiki-link'>WIKIPEDIA</a>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="P5u1am7pmrw" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center">
     <img src="https://upload.wikimedia.org/wikipedia/en/6/68/Patriot_promo_poster.jpg" width="220" height="342">
     <h2>The Patriot (2000 film)</h2>
+    <div class='trailer-link' data-trailer-youtube-id="P5u1am7pmrw" data-toggle="modal" data-target="#trailer">TRAILER</div>
+    <a href="https://en.wikipedia.org/wiki/The_Patriot_(2000_film)" class='wiki-link'>WIKIPEDIA</a>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="UWfXyNfVotg" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center">
     <img src="https://upload.wikimedia.org/wikipedia/en/8/82/The_Rock_%28movie%29.jpg" width="220" height="342">
     <h2>The Rock (film)</h2>
+    <div class='trailer-link' data-trailer-youtube-id="UWfXyNfVotg" data-toggle="modal" data-target="#trailer">TRAILER</div>
+    <a href="https://en.wikipedia.org/wiki/The_Rock_(film)" class='wiki-link'>WIKIPEDIA</a>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="zCy5WQ9S4c0" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center">
     <img src="https://upload.wikimedia.org/wikipedia/en/2/22/Titanic_poster.jpg" width="220" height="342">
     <h2>Titanic (1997 film)</h2>
+    <div class='trailer-link' data-trailer-youtube-id="zCy5WQ9S4c0" data-toggle="modal" data-target="#trailer">TRAILER</div>
+    <a href="https://en.wikipedia.org/wiki/Titanic_(1997_film)" class='wiki-link'>WIKIPEDIA</a>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="vwyZH85NQC4" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center">
     <img src="http://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg" width="220" height="342">
     <h2>Tory Story</h2>
+    <div class='trailer-link' data-trailer-youtube-id="vwyZH85NQC4" data-toggle="modal" data-target="#trailer">TRAILER</div>
+    <a href="https://en.wikipedia.org/wiki/Tory_Story" class='wiki-link'>WIKIPEDIA</a>
 </div>
 
     </div>

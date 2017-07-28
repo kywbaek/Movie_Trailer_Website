@@ -8,4 +8,7 @@ class Movie():
         self.poster_image_url = poster_image
         self.trailer_youtube_url = trailer_youtube
 
+        # url for wikipedia page
+        self.wikipage_url = "https://en.wikipedia.org/wiki/" + movie_title.replace(" ", "_")
+
         Movie.movies.append(self)
